@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.calculator {
+    background: whitesmoke;
+    box-shadow: 0, 20px 60px rgba(0 0 0 0.3);
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+}
+h1 {
+    color: rgb(3, 54, 54);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.number1 {
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    color:rgb(115, 103, 12);
+    font-weight: bold;
+}
+input {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid rgb(39, 165, 151);
+    border-radius: 10px;
+    transition: border-color 0.3s;
+}
+input:focus {
+    outline: none;
+    border-color: rgb(255, 106, 0);
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+button {
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    color: rgb(11, 149, 57);
+    transition: all 3s;
+    cursor: pointer;
+}
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(15, 240, 3, 0.2);
+}
+.button-add {
+background: #4ecdc4;
+}
+
+.button-subtract {
+background: #ff6b6b;
+}
+
+.button-multiply {
+ background: #f9ca24;
+}
+
+.button-divide {
+background: #a29bfe;
+}
+.result {
+    background-color: #bbb7ec;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.result-btn {
+    font-size: 14px;
+    color: rgb(63, 10, 1);
+    margin-bottom: 5px;
+}
